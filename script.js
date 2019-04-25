@@ -14,7 +14,7 @@ function addNum() {
 	}
 }
 
-function findLeast(arr) {
+function findMostTimes(arr) {
 	var times = [];
 	
 	for(i in arr) {
@@ -57,19 +57,19 @@ function findLeast(arr) {
 var val = 1;
 
 function show() {
-	divOne.innerHTML += 'Returns the value that occurs the maximum nubmer of times</br></br>Array: ';
+	divOne.innerHTML += 'Returns value that occurs maximum nubmer of times</br></br>Array: ';
 
 	for(i in arr) {
 		divOne.innerHTML += arr[i] + ' ';
 	}
 	
-	var maxTimes = findLeast(arr);
+	var valueWithMaxTimes = findMostTimes(arr);
 	
-	divOne.innerHTML +=	'</br></br>Add number to the array: ';
+	divOne.innerHTML += '</br></br>Add number to array: ';
 	divOne.innerHTML += '<input type="number" name="num" id="num" value="'+val+'"/>';
 	divOne.innerHTML += '<button id="addButton" onclick="addNum()">Add</button>';
-	divOne.innerHTML += '</br></br>Value that occurs maximum nubmer of times: ';
-	divOne.innerHTML += maxTimes;
+	divOne.innerHTML += '</br></br>Value: ';
+	divOne.innerHTML += valueWithMaxTimes;
 }
 
 
