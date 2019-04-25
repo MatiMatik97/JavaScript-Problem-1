@@ -1,0 +1,14 @@
+body {
+	background-color: #d9e5f7;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+#divOne {
+	width: 40%;
+	margin-left: 30%;
+	border-top: 2px solid purple;
+	padding-top: 20px;
+	margin-top: 50px;
+}
